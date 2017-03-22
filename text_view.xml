@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:weightSum="1"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical|left"
+    android:clickable="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:id="@+id/card_view"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardBackgroundColor="@color/colorcardbackground"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        card_view:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:padding="1dp">
+
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="android.support.v7.widget.CardView"
+            android:id="@+id/view"
+            android:background="@android:color/holo_green_dark" />
+
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:id="@+id/textTitle"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/textdescription"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="30dp"
+            android:maxLines="2"
+            android:maxLength="80"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:id="@+id/textDate"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
